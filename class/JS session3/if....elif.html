@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <hr>
+    <script>
+        const per=Math.ceil(prompt("Enter your percentage:"));
+        if(per>=70 && per<=100){
+            document.write(`<h3> Congractulations.. You secured Distinction..!!</h3>`);
+        }
+        else if(per>=60 && per <70){
+            document.write(`<h3> Congractulations.. You secured FirstClass..!!</h3>`);
+        }
+        else if(per>=50 && per<60){
+            document.write(`<h3> Congractulations.. You secured SecondClass..!!</h3>`);
+        }
+        else if(per>=35 && per<50){
+            document.write(`<h3> Congractulations.. You secured ThirdClass..!!</h3>`);
+        }
+        else if(per>=0 && per<35){
+            document.write(`<h3> Sorry.. You are Fail..!!</h3>`);
+        }
+        else{
+            document.write(`<h3>Kindly Enter the correct marks</h3>`)
+        }
+
+    </script>
+</body>
+</html>

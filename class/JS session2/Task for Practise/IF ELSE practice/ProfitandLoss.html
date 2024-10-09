@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss</title>
+</head>
+<body>
+    <h1>Showing User get Profit or Loss</h1>
+    <hr>
+    <script>
+        var cost_price=prompt("Enter the Cost price:");
+        var sell_price=prompt("Enter the Selling price:");
+        
+        var profit=sell_price - cost_price;
+        var loss=cost_price - sell_price;
+        if(cost_price < sell_price){
+            document.write(`<h3>You Get PROFIT:- Rs ${profit}  </h3>`);
+        }
+        else{
+            document.write(`<h3>You Get LOSS:- Rs ${loss} </h3>`);
+        }
+    </script>
+</body>
+</html>

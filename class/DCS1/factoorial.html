@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Factorial
+    </h1>
+    <script>
+        var num=prompt("Enter any number");
+        // var ogNum=num;
+        // if(!isNaN(num)){
+        //     var fact =1;
+        //     while(num>0){
+        //         fact*=num;
+        //         num--;
+        //     }
+        //     document.write(`Factorial of ${ogNum} is ${fact}`);
+        // }
+        // else{
+        //     alert("Enter Number only");
+        // }
+
+        // for loop
+        if(!isNaN(num)){
+            var fact=1;
+            for(var i =1;i<=num;i++){
+                fact *=i;
+            }
+            document.write(`Factorial of ${num} is ${fact}`);
+
+        }
+        else{
+            alert("Enter number only");
+        }
+    </script>
+</body>
+</html>

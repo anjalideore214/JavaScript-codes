@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fibonocci(length){
+            let fnum=0;
+            let snum=1;
+            let result=`${fnum}, ${snum},`;
+            let i=3;
+            while(i<=length){
+                let tnum=fnum+snum;
+                result+=`${tnum},`;
+                fnum=snum;
+                snum=tnum;
+                i++;
+            }
+            document.write(`<h3>${result}</h3>`);
+        }
+        fibonocci(15);
+    </script>
+</body>
+</html>

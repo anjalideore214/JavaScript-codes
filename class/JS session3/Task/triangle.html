@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <h1>To check Triangle is Scalene , Isosceles or Equilateral</h1>
+    <hr>
+    <hr>
+    <script>
+        var S1=prompt("Enter first side value:");
+        var S2=prompt("Enter second side value:");
+        var S3=prompt("Enter third side value:");
+
+        if((S1==S2)&&(S2==S3)&&(S1==S3)){
+            document.write(`<h3> This is Equilateral Triangle...</h3>`);
+        }
+        else if((S1==S2)&&((S2!=S3)||(S1!=S3))){
+            document.write(`<h3> This is Isosceles Triangle...</h3>`);
+        }
+        else{
+            document.write(`<h3> This is Scelene Triangle...</h3>`);
+        }
+    </script>
+</body>
+</html>

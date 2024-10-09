@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function SI(P,R,N=5){
+            return (P*R*N)/100;
+        }
+        alert(SI(5000,4,5.5));
+        alert(SI(5000,5));
+        alert(SI(
+            prompt("Enter Principal Amount"),
+            prompt("Enter Rate of Interest"),
+            prompt("Enter No Of Years")
+        ))
+    </script>
+</body>
+</html>

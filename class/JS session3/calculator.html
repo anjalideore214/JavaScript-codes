@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <hr>
+    <script>
+        var num1=prompt("Enter first number");
+        var num2=prompt("Enter second number");
+        var op=prompt(`Enter + for addition, - for subtraction, * for  multiplication, / for division `);
+        switch(op){
+            case "+":document.write(`Addition is ${num1+num2}`);break;
+            case "-":document.write(`Subtraction is ${num1-num2}`);break;
+            case "*":document.write(`Multiplication is ${num1*num2}`);break;
+            case "/":document.write(`Division is ${num1/num2}`);break;
+            default:document.write("Kindly Enter correct operator");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate onsubmit="loginform(event)">
+        <input type="email" placeholder="john.doe@gmail.com" id="email" required />
+        <span id="erroremail"></span>
+        <br><br>
+        <input type="password" placeholder="*************" id="pass" required />
+        <span id="errorpass"></span>
+        <br><br>
+        <input type="submit" value="Login" />
+    </form>
+    <script>
+       function loginform(event){}
+            event.preventDefault();
+            const email=document.querySelector('#email');
+            const pass=document.querySelector('#pass');
+            const emailer=document.querySelector('#erroremail');
+            const passerror=document.querySelector('#errorpass');
+
+            if(email.value==''){
+                emailer.textContent="Email cannot be Empty";
+            }
+            else if(pass.value==''){
+                emailer.textContent=''
+                passerror.textContent="Password cannot be Empty";
+            }
+            else{
+                passerror.textContent='';
+                if(email.value=='admin@gmail.com' && pass.value=='123456'){
+                    alert('Login Successful...!!!')
+                }
+                else{
+                    alert('Invalid Credential, Try again')
+                }
+            }
+
+    </script>
+</body>
+</html>

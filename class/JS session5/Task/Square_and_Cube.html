@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Functions to calculate Square and Cube of given Number
+    </h1>
+    <hr><hr>
+    <script>
+        var num=Number(prompt("Enter tthe Number"));
+
+        function Square(num){
+            return (num**2);
+        }
+        function Cube(num){
+            return (num**3);
+        }
+
+        Square();
+        Cube();
+        
+        document.write(`<h3>The Square of ${num} is ${Square(num)} </h3>`);
+        document.write(`<h3>The Cube of ${num} is ${Cube(num)} </h3>`);
+    </script>
+</body>
+</html>
